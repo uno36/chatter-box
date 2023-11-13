@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="flex flex-col items-center justify-center">
+  <h1 class="mb-6 text-4xl font-bold text-rose-600">Welcome to Our Chatterbox bot</h1>
+
+  <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <p class="text-gray-700 leading-relaxed">
+      Our Chatterbox bot is designed to provide you with quick and helpful information. Whether you have questions about our
+      products, need assistance, or just want to chat, our chatbot is here for you.
+    </p>
+
+    <p class="mt-4 text-gray-700 leading-relaxed">
+      Powered by cutting-edge artificial intelligence, our chatbot strives to understand your queries and provide
+      relevant responses. Feel free to explore and engage with our Chatterbox bot for a seamless experience.
+    </p>
+
+    <p class="mt-4 text-gray-700 leading-relaxed">
+      Your satisfaction is our priority, and our Chatterbox bot is ready to assist you 24/7. If you have any feedback or
+      suggestions, please let us know. We're constantly working to improve your interaction with our chatbot.
+    </p>
+  </div>
+
+  <div class="mt-8">
+    <h2 class="text-2xl font-bold text-rose-600">Meet Our Team</h2>
+    <div class="flex space-x-4 mt-4">
+      <!-- Add team member cards with images, names, and roles -->
+      <div class="flex-shrink-0 w-20 h-20">
+        <img src="{% static 'images/my-profile-pic.png' %}" alt="Team Member 1" class="w-full h-full object-cover rounded-full">
+      </div>
+      <div class="flex-shrink-0 w-20 h-20">
+        <img src="{% static 'images/team-member-2.png' %}" alt="Team Member 2" class="w-full h-full object-cover rounded-full">
+      </div>
+      <div class="flex-shrink-0 w-20 h-20">
+        <img src="{% static 'images/team-member-3.png' %}" alt="Team Member 3" class="w-full h-full object-cover rounded-full">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
