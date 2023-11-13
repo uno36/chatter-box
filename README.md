@@ -94,7 +94,7 @@ Clone this repository to your desired folder:
 ```
 cd my-folder
 
-git clone https//github.com/uno36/chatterbox.git
+git clone https//github.com/uno36/chatter-box.git
 ```
 
 
