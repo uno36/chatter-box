@@ -1,0 +1,13 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h1 class="mb-6 text-2xl">Remove User</h1>
+
+<form method="post" action=".">
+  {% csrf_token %}
+
+  <p>Are you sure you want to remove the user '{{ user.name }}'? This action cannot be undone.</p>
+
+  <button type="button" class="mt-6 inline-block py-2 px-6 bg-rose-600 text-white rounded-xl">Remove User</button>
+</form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<h2>Sign Up</h2>
+<form method="post" action="{% url 'account:signup' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <p>Already have an account? <a href="{% url 'account:login' %}" class="text-rose-800 underline">Login</a></p>
+  <button type="submit" class="py-2 mt-2 px-6 bg-rose-600 text-white rounded-xl">Sign up</button>
+</form>
+
+{% endblock %}
