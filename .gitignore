@@ -1,0 +1,47 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.pyc
+
+# Django
+*.sqlite3
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+
+# Static files
+staticfiles/
+__pycache__/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Node.js
+node_modules/
+
+# Compiled CSS
+*.css
+
+# macOS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# PyCharm files
+*.iml
+.idea
+
+# Editor-specific files
+*.suo
+*.user
+*.sln.docstates
+
